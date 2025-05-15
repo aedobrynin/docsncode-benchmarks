@@ -36,15 +36,18 @@ def process_file(file_path):
                 if not in_single_line_comment_block:
                     processed_lines.append('// @docsncode\n')
                     in_single_line_comment_block = True
-                    total_comments_processed += 1
                 processed_lines.append(line)
                 if i == len(lines) - 1:
                     processed_lines.append('// @docsncode\n')
                 continue
 
+        if in_single_line_comment_block:
+            total_comments_processed += 1
+            processed_lines.append('// @docsncode\n')
+            in_single_line_comment_block = False
+
         if '/*' in line:
             in_multiline_comment_block = True
-            total_comments_processed += 1
             processed_lines.append(line[:line.find('/*')])
             processed_lines.append('/* @docsncode\n')
             processed_lines.append(line[line.find('/*'):].replace('/*', ''))
@@ -52,14 +55,10 @@ def process_file(file_path):
 
         if '*/' in line:
             in_multiline_comment_block = False
+            total_comments_processed += 1
             processed_lines.append(line.replace('*/', ''))
             processed_lines.append('@docsncode */\n')
-            continue
-
-        if in_single_line_comment_block:
-            processed_lines.append('// @docsncode\n')
-            in_single_line_comment_block = False
-            current_single_line_comment_block_indent = None
+            continue        
 
         if in_single_line_comment_block or in_multiline_comment_block:
             # Remove indent on purpose.

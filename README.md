@@ -21,71 +21,71 @@ Tested on i7-12800H with 32 Gb. RAM.
 
 2. Generated docsncode-compliant project with `docnscode_project_generator.py`.
 
-It's output was:
-```
-total comments processed: 943322
-total files processed: 61002
-total files: 88857
-total directories processed: 5912
-```
+    It's output was:
+    ```
+    total comments processed: 943071
+    total files processed: 61002
+    total files: 88857
+    total directories processed: 5912
+    ```
 
 3. Ran `benchmark.py linux-with-docsncode none` to test it without any caching.
 
     And got the following result:
     ```
-    Execution try finished, execution_time: 12.83767056465149
-    Execution try finished, execution_time: 13.177760124206543
-    Execution try finished, execution_time: 13.2678804397583
-    Execution try finished, execution_time: 13.312976837158203
-    Execution try finished, execution_time: 13.945830583572388
-    Execution try finished, execution_time: 14.113778114318848
-    Execution try finished, execution_time: 14.036697149276733
-    Execution try finished, execution_time: 14.482021808624268
-    Execution try finished, execution_time: 14.414376735687256
-    Execution try finished, execution_time: 14.290595054626465
-    Min execution time: 12.8376705647 seconds
-    Avg execution time: 13.7879587412 seconds
-    Max execution time: 14.4820218086 seconds
+    Execution try finished, execution_time: 9.342565536499023
+    Execution try finished, execution_time: 9.515044927597046
+    Execution try finished, execution_time: 9.465934038162231
+    Execution try finished, execution_time: 9.655285358428955
+    Execution try finished, execution_time: 10.332965850830078
+    Execution try finished, execution_time: 10.173842906951904
+    Execution try finished, execution_time: 10.119024753570557
+    Execution try finished, execution_time: 10.268062353134155
+    Execution try finished, execution_time: 11.203366756439209
+    Execution try finished, execution_time: 10.982413291931152
+    Min execution time: 9.3425655365 seconds
+    Avg execution time: 10.1058505774 seconds
+    Max execution time: 11.2033667564 seconds
     ```
 
 4. Ran `benchmark.py linux-with-docsncode modtime` to test it with modtime cache.
 
     And got the following result:
     ```
-    Execution try finished, execution_time: 13.067859172821045
-    Execution try finished, execution_time: 12.793839931488037
-    Execution try finished, execution_time: 12.8129301071167
-    Execution try finished, execution_time: 13.125548124313354
-    Execution try finished, execution_time: 13.958875894546509
-    Execution try finished, execution_time: 14.490320920944214
-    Execution try finished, execution_time: 13.942127704620361
-    Execution try finished, execution_time: 14.407310247421265
-    Execution try finished, execution_time: 13.924032211303711
-    Execution try finished, execution_time: 14.132335186004639
-    Min execution time: 12.7938399315 seconds
-    Avg execution time: 13.6655179501 seconds
-    Max execution time: 14.4903209209 seconds
+    Execution try finished, execution_time: 9.161744356155396
+    Execution try finished, execution_time: 10.260641098022461
+    Execution try finished, execution_time: 10.191008806228638
+    Execution try finished, execution_time: 10.235474348068237
+    Execution try finished, execution_time: 10.352956295013428
+    Execution try finished, execution_time: 10.542083740234375
+    Execution try finished, execution_time: 10.4089515209198
+    Execution try finished, execution_time: 10.308413982391357
+    Execution try finished, execution_time: 10.23032522201538
+    Execution try finished, execution_time: 10.30897068977356
+    Min execution time: 9.1617443562 seconds
+    Avg execution time: 10.2000570059 seconds
+    Max execution time: 10.5420837402 seconds
     ```
 
 4. Ran `benchmark.py linux-with-docsncode hash` to test it with hash cache.
 
     And got the following result:
     ```
-    Execution try finished, execution_time: 12.769819736480713
-    Execution try finished, execution_time: 13.11590576171875
-    Execution try finished, execution_time: 13.623903036117554
-    Execution try finished, execution_time: 14.870942831039429
-    Execution try finished, execution_time: 14.611047506332397
-    Execution try finished, execution_time: 15.80657172203064
-    Execution try finished, execution_time: 15.571398735046387
-    Execution try finished, execution_time: 15.914688348770142
-    Execution try finished, execution_time: 15.200995445251465
-    Execution try finished, execution_time: 14.959194660186768
-    Min execution time: 12.7698197365 seconds
-    Avg execution time: 14.6444467783 seconds
-    Max execution time: 15.9146883488 seconds
+    Execution try finished, execution_time: 9.458965063095093
+    Execution try finished, execution_time: 9.354227542877197
+    Execution try finished, execution_time: 10.460801362991333
+    Execution try finished, execution_time: 10.596291780471802
+    Execution try finished, execution_time: 10.553105354309082
+    Execution try finished, execution_time: 10.640692710876465
+    Execution try finished, execution_time: 11.283113479614258
+    Execution try finished, execution_time: 10.927942276000977
+    Execution try finished, execution_time: 10.51029372215271
+    Execution try finished, execution_time: 10.544775485992432
+    Min execution time: 9.3542275429 seconds
+    Avg execution time: 10.4330208778 seconds
+    Max execution time: 11.2831134796 seconds
     ```
 
-5. Rebuilt the project with modtime cache, changed one file and ran the build again. The build took TODO sec.
+5. Rebuilt the project with modtime cache, changed one file and ran the build again. The build took 0.795 sec.
 
-6. Rebuilt the project with hash cache, changed one file and ran the build again. The build took TODO sec.
+6. Rebuilt the project with hash cache, changed one file and ran the build again. The build took 1.734 sec.
