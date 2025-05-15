@@ -40,7 +40,7 @@ if __name__ == "__main__":
     for _ in range(EXECUTION_TRIES):
         execution_time = run_docsncode(path, cache_type)
         execution_times.append(execution_time)
-        print('Execution try finished, execution_time:', execution_time)
+        print('Execution try finished, execution_time:', execution_time, 's.')
 
     min_execution_time = min(execution_times)
     avg_execution_time = sum(execution_times) / EXECUTION_TRIES
