@@ -86,6 +86,6 @@ Tested on i7-12800H with 32 Gb. RAM.
     Max execution time: 11.2831134796 seconds
     ```
 
-5. Rebuilt the project with modtime cache, changed one file and ran the build again. The build took 0.795 sec.
+5. Rebuilt the project with modtime cache, changed one file and ran the build again. The build took 0.795 s. on average.
 
-6. Rebuilt the project with hash cache, changed one file and ran the build again. The build took 1.734 sec.
+6. Rebuilt the project with hash cache, changed one file and ran the build again. The build took 1.734 s. on average.
