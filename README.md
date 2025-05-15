@@ -33,16 +33,16 @@ Tested on i7-12800H with 32 Gb. RAM.
 
     And got the following result:
     ```
-    Execution try finished, execution_time: 9.342565536499023
-    Execution try finished, execution_time: 9.515044927597046
-    Execution try finished, execution_time: 9.465934038162231
-    Execution try finished, execution_time: 9.655285358428955
-    Execution try finished, execution_time: 10.332965850830078
-    Execution try finished, execution_time: 10.173842906951904
-    Execution try finished, execution_time: 10.119024753570557
-    Execution try finished, execution_time: 10.268062353134155
-    Execution try finished, execution_time: 11.203366756439209
-    Execution try finished, execution_time: 10.982413291931152
+    Execution try finished, execution_time: 9.342565536499023 s.
+    Execution try finished, execution_time: 9.515044927597046 s.
+    Execution try finished, execution_time: 9.465934038162231 s.
+    Execution try finished, execution_time: 9.655285358428955 s.
+    Execution try finished, execution_time: 10.332965850830078 s.
+    Execution try finished, execution_time: 10.173842906951904 s.
+    Execution try finished, execution_time: 10.119024753570557 s.
+    Execution try finished, execution_time: 10.268062353134155 s.
+    Execution try finished, execution_time: 11.203366756439209 s.
+    Execution try finished, execution_time: 10.982413291931152 s.
     Min execution time: 9.3425655365 seconds
     Avg execution time: 10.1058505774 seconds
     Max execution time: 11.2033667564 seconds
@@ -52,16 +52,16 @@ Tested on i7-12800H with 32 Gb. RAM.
 
     And got the following result:
     ```
-    Execution try finished, execution_time: 9.161744356155396
-    Execution try finished, execution_time: 10.260641098022461
-    Execution try finished, execution_time: 10.191008806228638
-    Execution try finished, execution_time: 10.235474348068237
-    Execution try finished, execution_time: 10.352956295013428
-    Execution try finished, execution_time: 10.542083740234375
-    Execution try finished, execution_time: 10.4089515209198
-    Execution try finished, execution_time: 10.308413982391357
-    Execution try finished, execution_time: 10.23032522201538
-    Execution try finished, execution_time: 10.30897068977356
+    Execution try finished, execution_time: 9.161744356155396 s.
+    Execution try finished, execution_time: 10.260641098022461 s.
+    Execution try finished, execution_time: 10.191008806228638 s.
+    Execution try finished, execution_time: 10.235474348068237 s.
+    Execution try finished, execution_time: 10.352956295013428 s.
+    Execution try finished, execution_time: 10.542083740234375 s.
+    Execution try finished, execution_time: 10.4089515209198 s.
+    Execution try finished, execution_time: 10.308413982391357 s.
+    Execution try finished, execution_time: 10.23032522201538 s.
+    Execution try finished, execution_time: 10.30897068977356 s.
     Min execution time: 9.1617443562 seconds
     Avg execution time: 10.2000570059 seconds
     Max execution time: 10.5420837402 seconds
@@ -71,16 +71,16 @@ Tested on i7-12800H with 32 Gb. RAM.
 
     And got the following result:
     ```
-    Execution try finished, execution_time: 9.458965063095093
-    Execution try finished, execution_time: 9.354227542877197
-    Execution try finished, execution_time: 10.460801362991333
-    Execution try finished, execution_time: 10.596291780471802
-    Execution try finished, execution_time: 10.553105354309082
-    Execution try finished, execution_time: 10.640692710876465
-    Execution try finished, execution_time: 11.283113479614258
-    Execution try finished, execution_time: 10.927942276000977
-    Execution try finished, execution_time: 10.51029372215271
-    Execution try finished, execution_time: 10.544775485992432
+    Execution try finished, execution_time: 9.458965063095093 s.
+    Execution try finished, execution_time: 9.354227542877197 s.
+    Execution try finished, execution_time: 10.460801362991333 s.
+    Execution try finished, execution_time: 10.596291780471802 s.
+    Execution try finished, execution_time: 10.553105354309082 s.
+    Execution try finished, execution_time: 10.640692710876465 s.
+    Execution try finished, execution_time: 11.283113479614258 s.
+    Execution try finished, execution_time: 10.927942276000977 s.
+    Execution try finished, execution_time: 10.51029372215271 s.
+    Execution try finished, execution_time: 10.544775485992432 s.
     Min execution time: 9.3542275429 seconds
     Avg execution time: 10.4330208778 seconds
     Max execution time: 11.2831134796 seconds
